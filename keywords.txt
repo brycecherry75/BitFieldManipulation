@@ -1,0 +1,9 @@
+BitFieldManipulation	KEYWORD1
+WriteBF_byte	KEYWORD2
+WriteBF_word	KEYWORD2
+WriteBF_dword	KEYWORD2
+WriteBF_qword	KEYWORD2
+ReadBF_byte	KEYWORD2
+ReadBF_word	KEYWORD2
+ReadBF_dword	KEYWORD2
+ReadBF_qword	KEYWORD2
