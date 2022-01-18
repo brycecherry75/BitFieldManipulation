@@ -86,7 +86,7 @@ void BitFieldManipulationClass::ReverseBitOrder_byteArray(uint16_t array_element
 
 void BitFieldManipulationClass::ReverseBitOrder_wordArray(uint16_t array_elements, uint16_t *data_source) {
   for (uint16_t i = 0; i < array_elements; i++) {
-    data_source[i] = ReverseBitOrder_byte(data_source[i]);
+    data_source[i] = ReverseBitOrder_word(data_source[i]);
   }
   for (uint16_t i = 0; i < (array_elements / 2); i++) {
     uint16_t data = data_source[i];
@@ -100,7 +100,7 @@ void BitFieldManipulationClass::ReverseBitOrder_wordArray(uint16_t array_element
 
 void BitFieldManipulationClass::ReverseBitOrder_dwordArray(uint16_t array_elements, uint32_t *data_source) {
   for (uint16_t i = 0; i < array_elements; i++) {
-    data_source[i] = ReverseBitOrder_byte(data_source[i]);
+    data_source[i] = ReverseBitOrder_dword(data_source[i]);
   }
   for (uint16_t i = 0; i < (array_elements / 2); i++) {
     uint32_t data = data_source[i];
@@ -114,7 +114,7 @@ void BitFieldManipulationClass::ReverseBitOrder_dwordArray(uint16_t array_elemen
 
 void BitFieldManipulationClass::ReverseBitOrder_qwordArray(uint16_t array_elements, uint64_t *data_source) {
   for (uint16_t i = 0; i < array_elements; i++) {
-    data_source[i] = ReverseBitOrder_byte(data_source[i]);
+    data_source[i] = ReverseBitOrder_qword(data_source[i]);
   }
   for (uint16_t i = 0; i < (array_elements / 2); i++) {
     uint64_t data = data_source[i];

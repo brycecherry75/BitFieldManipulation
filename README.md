@@ -3,8 +3,12 @@
 BitFieldManipulation manipulates a bit field without modifying anything other than the bit field being manipulated
 
 Revisions:
+
 1.0.0	First release
+
 1.1.0	Added support for manipulating arrays including array-array transfers and bitshifts along with inclusion of bit order reversal functions
+
+1.1.1	Corrected bit order reversals for arrays with elements longer than a byte
 
 ## Usage
 
