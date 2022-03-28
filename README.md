@@ -18,7 +18,7 @@ ReadBF_(byte/word/dword/qword)(BitStart, BitWidth, data_source) - returns the fi
 
 WriteBF_(Byte/Word/Dword/Qword)To(Byte/Word/Dword/Qword)Array(BitStart, BitWidth, ArraySize, *data_destination, data_field) - writes data_field starting at BitStart with width corresponding to BitWidth
 
-Transfer(Byte/Word/Dword/Qword)ArrayTo(Byte/Word/Dword/Qword)Array(BitStart, BitWidth, DestinationArrayElements, SourceArrayElements, *data_destination, *data_source) - transfers data_source to data_destination with LSB of data_source starting at BitStart
+Transfer(Byte/Word/Dword/Qword)ArrayTo(Byte/Word/Dword/Qword)Array(SourceBitStart, SourceBitWidth, SourceArrayElements, DsetinationBitStart, DestinationArrayElements, *data_destination, *data_source) - transfers data_source to data_destination with LSB of data_source starting at BitStart
 
 ReadBF_(Byte/Word/Dword/Qword)ArrayTo(Byte/Word/Dword/Qword)(BitStart, BitWidth, ArraySize, *data_source) - returns the field defined by BitStart/BitWidth extracted from the data source
 
